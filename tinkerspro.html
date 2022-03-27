@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+    crossorigin="anonymous">
+    <title>Carlos Bottiglieri CB Design</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/cb.png" class="imglogo">
+        </a>
+        <a href="#" class="logo">Proyecto TinkersPro</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="index.html" onclick="toggleMenu();">Inicio</a></li>
+            <li><a href="#about" onclick="toggleMenu();">Acerca de</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Servicios</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Trabajos</a></li>
+            <li><a href="#testimonial" onclick="toggleMenu();">Testimonios</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contactame</a></li>
+        </ul>
+    </header>
+    <section class="bannerTinkersPro" id="TinkersPro">
+        <div class="textBx">
+            <h2><span>DESIGN THINKING <br></h2>
+            <h3>GESTIÓN Y DOCUMENTACIÓN UX/UI</h3>
+            <p>Es una aplicación para documentar la gestión del Design Thinking. <br>
+                La gestión se vuelve más fácil de dominar a la hora de llevar <br>
+                a cabo el proceso de diseño de productos digitales.</p>
+            <a href="#about" class="btn">Ver proyecto</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>Introducción</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>¡Bienvenidos!</h3>
+                <p>Es una aplicación de gestión del Design Thinking para documentar 
+                    las fases de: Empatizar - Definir - Idear - Prototipar - Testear, 
+                    donde en cada una de estas le permita al usuario objetivo (diseñadores) 
+                    agregar el método/técnica/estrategia que está aplicando y donde pueda 
+                    subir una foto/imagen y que pueda agregar una descripciones, 
+                    observaciones y poner fechas de inicio y finalización de cada una.</p>
+            </div>
+            <div class="w50">
+                <img src="images/designthinking.gif" class="imgUser">
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contacto</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contactame</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Dirección</h3>
+                            <p>Rosario de santa fe 422 <br> 1º B <br> Barrio Centro <br> Córdoba, Argentina</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Teléfono</h3>
+                            <p>351-7567578</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>bottiglieri@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form action="">
+                    <h3>Envíame un Mensaje</h3>
+                    <input type="text" placeholder="Nombre completo">
+                    <input type="email" placeholder="Email">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>copyright &#169 2020 - CB Design - Todos los derechos reservados</p>
+    </div>
+    <script>
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

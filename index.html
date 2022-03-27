@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+    crossorigin="anonymous">
+    <title>Carlos Bottiglieri CB Design</title>
+</head>
+<body>
+    <header>
+        <img src="images/cb.png" class="imglogo">
+        <a href="#" class="logo">Portfolio Profesional</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Inicio</a></li>
+            <li><a href="#about" onclick="toggleMenu();">Acerca de</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Servicios</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Trabajos</a></li>
+            <li><a href="#testimonial" onclick="toggleMenu();">Testimonios</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contactame</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hola, soy <br><span>Carlos Bottiglieri</h2>
+            <h3>Soy Desarrollador de Software y Diseñador UX-UI</h3>
+            <a href="#about" class="btn">Acerca de mi</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>Sobre mi</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>¡Bienvenidos!</h3>
+                <p>Soy diseñador y desarrollador de aplicaciones con sede en Córdoba Argentina, 
+                    con 12 años de experiencia en la industria del software. También hice la 
+                    carrera de diseño gráfico. 
+
+                    Mi área de enfoque durante los últimos años ha sido UX Research, pero también 
+                    tengo experiencia en el desarrollo front-end y back-end con JS y C#. 
+                    La curiosidad y las ganas de actualizar mis conocimientos me han llevado a 
+                    salir del campo de mi carrera principal para adquirir nuevas formas de diseñar 
+                    y desarrollar aplicaciones.</p>
+            </div>
+            <div class="w50">
+                <img src="images/userImg.png" class="imgUser">
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>Servicios que ofresco</h2>
+            <p>En esta sección encontrarás todos los servicios que puedo brindar.</p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <img src="images/icon1.png" alt="">
+                <h2>Diseño UX-UI</h2>
+                <p>El diseño de productos digitales, además de una interfaz, también 
+                    necesita una visión. Utilizando metodologías de Diseño UX, 
+                    hacemos que las grandes ideas se conviertan en grandes negocios.</p>
+            </div>
+            <div class="servicesBx">
+                <img src="images/icon2.png" alt="">
+                <h2>Desarrollo</h2>
+                <p>Programacion Front-end y Back-end en distintos frameworks y plataformas.
+                    Desarrollo de aplicaciones desktop, tablets, smartphones yDesarrollo Web.
+                    Para sistemas operativos Windows y Android y multiplataformas.
+                </p>
+            </div>
+            <div class="servicesBx">
+                <img src="images/icon5.png" alt="">
+                <h2>CX-UX Research</h2>
+                <p>User Research para comprender en profundidad la problemática a solucionar 
+                    desde el producto.
+                    UX Testing para evaluar si la experiencia digital es la óptima.
+                    Customer Experience Research para entender por qué nos aman y 
+                    por qué nos abandonan los clientes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <div class="heading">
+            <h2>Proyectos destacados</h2>
+            <p>Aquí podrás ver mis casos de éxito.</p>
+        </div>
+        <div class="content">
+            <div class="workBx">
+                <a title="TinkersPro" href="tinkerspro.html">
+                    <img src="images/product1.jpg" alt="TinkersPro">
+                </a>
+            </div>
+            <div class="workBx">
+                <img src="images/product2.jpg" alt="">
+            </div>
+            <div class="workBx">
+                <img src="images/product3.jpg" alt="">
+            </div>
+            <div class="workBx">
+                <img src="images/product4.jpg" alt="">
+            </div>
+        </div>
+        <div class="heading">
+            <a href="#" class="btn">Ver Más</a>
+        </div>
+    </section>
+
+    <section class="testimonial" id="testimonial">
+        <div class="heading">
+            <h2>Testimonios</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="content">
+            <div class="testimonialBx">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vel 
+                    exercitationem ratione quo eveniet, sunt, quis, tempora porro voluptatum 
+                    quam temporibus minima.</p>
+                    <h3>Alguien Famoso<br><span>Diseñador Creativo</span> </h3>
+            </div>
+            <div class="testimonialBx">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vel 
+                    exercitationem ratione quo eveniet, sunt, quis, tempora porro voluptatum 
+                    quam temporibus minima.</p>
+                    <h3>Alguien Famoso<br><span>Diseñador Creativo</span> </h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contacto</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contactame</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Dirección</h3>
+                            <p>Rosario de santa fe 422 <br> 1º B <br> Barrio Centro <br> Córdoba, Argentina</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Teléfono</h3>
+                            <p>351-7567578</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>bottiglieri@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form action="">
+                    <h3>Envíame un Mensaje</h3>
+                    <input type="text" placeholder="Nombre completo">
+                    <input type="email" placeholder="Email">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>copyright &#169 2020 - CB Design - Todos los derechos reservados</p>
+    </div>
+    <script>
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
