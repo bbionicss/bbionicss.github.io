@@ -15,7 +15,7 @@ section{
 .banner{
     position: relative;
     min-height: 100vh;
-    background: url(images/banner.jpg);
+    background: url(Images/banner.jpg);
     background-size: cover;
     background-position: right;
     display: flex;
@@ -27,7 +27,7 @@ section{
 .bannerTinkersPro{
     position:relative;
     min-height: 100vh;
-    background: url(images/bannertinkerspro.jpg);
+    background: url(Images/bannertinkerspro.jpg);
     background-size:cover;
     background-position: right;
     display: flex;
