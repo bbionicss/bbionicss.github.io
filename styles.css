@@ -213,10 +213,13 @@ background: #333;
     width:auto;
     position: relative;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .container .card{
+    margin: 40px;
     position: relative;
 }
 .container .card .face{
