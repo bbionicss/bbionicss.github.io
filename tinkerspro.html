@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="lightbox.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
     crossorigin="anonymous">
@@ -18,11 +19,13 @@
         <div class="toggle" onclick="toggleMenu();"></div>
         <ul class="menu">
             <li><a href="index.html" onclick="toggleMenu();">Inicio</a></li>
-            <li><a href="#about" onclick="toggleMenu();">Acerca de</a></li>
-            <li><a href="#services" onclick="toggleMenu();">Servicios</a></li>
-            <li><a href="#work" onclick="toggleMenu();">Trabajos</a></li>
-            <li><a href="#testimonial" onclick="toggleMenu();">Testimonios</a></li>
-            <li><a href="#contact" onclick="toggleMenu();">Contactame</a></li>
+            <li><a href="#intro" onclick="toggleMenu();">Introducción</a></li>
+            <li><a href="#problema" onclick="toggleMenu();">Problema</a></li>
+            <li><a href="#publico" onclick="toggleMenu();">Público</a></li>
+            <li><a href="#roles" onclick="toggleMenu();">Roles</a></li>
+            <li><a href="#limites" onclick="toggleMenu();">Límites</a></li>
+            <li><a href="#proceso" onclick="toggleMenu();">Proceso</a></li>
+            <li><a href="#feedback" onclick="toggleMenu();">Concluciones</a></li>
         </ul>
     </header>
     <section class="bannerTinkersPro" id="TinkersPro">
@@ -32,10 +35,10 @@
             <p>Es una aplicación para documentar la gestión del Design Thinking. <br>
                 La gestión se vuelve más fácil de dominar a la hora de llevar <br>
                 a cabo el proceso de diseño de productos digitales.</p>
-            <a href="#about" class="btn">Ver proyecto</a>
+            <a href="#intro" class="btn">Ver proyecto</a>
         </div>
     </section>
-    <section class="about" id="about">
+    <section class="intro" id="intro">
         <div class="heading">
             <h2>Introducción</h2>
         </div>
@@ -51,14 +54,17 @@
                     observaciones y poner fechas de inicio y finalización de cada una.</p>
             </div>
             <div class="w50">
-                <img src="Images/designthinking.gif" class="imgUser">
+                <img src="Images/designthinking.gif" class="imgDT">
             </div>
         </div>
     </section>
-    <section class="Declaracion del problema" id="declara">
+    <section class="problema" id="problema">
         <div class="heading">
             <h2>Declaración del problema</h2>
             <div class="content">
+                <div class="w50">
+                    <img src="Images/Design-thinking-process.gif" class="imgDTProcess">
+                </div>
                 <div class="contentBx w50">
                     <h3>El problema</h3>
                     <p>El proyecto cumple con la necesidad principal de mantener documentado 
@@ -71,12 +77,27 @@
         </div>
     </section>
 
-    <section class="Usuarios y audiencia" id="audiencia">
+    <section class="publico" id="publico">
         <div class="heading">
             <h2>Usuarios y audiencia</h2>
-            <div class="content">
+            <div class="contentDos">
+                <div class="w51">
+                    <img src="Images/icons8_administrator_male.svg" class="imgDTUsers">
+                </div>
+                <div class="w51">
+                    <img src="Images/icons8_businesswoman.svg" class="imgDTUsers">
+                </div>
+                <div class="w51">
+                    <img src="Images/icons8_female_user_1.svg" class="imgDTUsers">
+                </div>
+                <div class="w51">
+                    <img src="Images/icons8_user_1.svg" class="imgDTUsers">
+                </div>
+                <div class="w51">
+                    <img src="Images/icons8_user_male.svg" class="imgDTUsers">
+                </div>
                 <div class="contentBx w50">
-                    <h3>Usuarios y audiencia</h3>
+                    <h3>Descripción</h3>
                     <p>El usuario principal son todos aquellos que usen la metodología 
                         de trabajo del Design Thinking como por ejemplo: Diseñadores UX, 
                         Diseñadores de interacciones, Diseñadores de productos, Diseñadores 
@@ -87,10 +108,13 @@
         </div>
     </section>
 
-    <section class="Roles y competencia" id="roles">
+    <section class="roles" id="roles">
         <div class="heading">
             <h2>Roles y competencia</h2>
             <div class="content">
+                <div class="w50">
+                    <img src="Images/roles.gif" class="imgDTRol">
+                </div>
                 <div class="contentBx w50">
                     <h3>Roles y competencia</h3>
                     <p>Mis roles para realizar este proyecto fueron: UX Research, 
@@ -102,88 +126,350 @@
         </div>
     </section>
 
-    <section class="Alcances y limitaciones" id="alcances">
+    <section class="limites" id="limites">
         <div class="heading">
             <h2>Alcances y limitaciones</h2>
             <div class="content">
                 <div class="contentBx w50">
-                    <h3>De tiempos</h3>
+                    <div class="w52">
+                        <img src="Images/icons8_time.svg" class="imgTime">
+                    </div>
+                    <h3>De tiempos</h3>  
                     <p>La estimación de los tiempos para finalizar el proyecto fue de un año, 
                         con un margen de error de 1 mes más o menos.</p>
 
+                    <div class="w52">
+                        <img src="Images/icons8_private.svg" class="imgTime">
+                    </div>
                     <h3>Límites del proyecto</h3>
                     <p>Desde que se registran los usuarios del equipo de trabajo para la creación 
                         del proyecto de trabajo grupal hasta la finalización de la documentación 
                         de todas las fases del Design Thinking.</p>
-
+                        
+                    <div class="w52">
+                        <img src="Images/icons8_goal.svg" class="imgTime">
+                    </div>
                     <h3>Alcances</h3>
-                    <p>- Registro y modificación de usuarios
-                        - Asignación y modificación de roles de usuarios
-                        - Crear y modificar grupos de trabajo
-                        - Ofrecer tips y documentación de ayuda sobre el uso de la aplicación
-                        - Ofrecer documentación de apoyo sobre la metodología del Design Thinking
-                        - Crear y modificar proyectos por grupo de trabajo
-                        - Crear y modificar fases de Design Thinking
-                        - Interactuar con grupo de trabajo online
-                        - Interactuar con clientes y usuarios objetivo del proyecto online
-                        - Documentar y modificar actividades de cada fase
-                        - Generar estadísticas de proyectos, actividades e integrantes del equipo de trabajo
-                        - Documentar feedback por cada proyecto</p>
+                    <ul>
+                        <li>- Registro y modificación de usuarios</li>
+                        <li>- Asignación y modificación de roles de usuarios</li>
+                        <li>- Crear y modificar grupos de trabajo</li>
+                        <li>- Ofrecer tips y documentación de ayuda sobre el uso de la aplicación</li>
+                        <li>- Ofrecer documentación de apoyo sobre la metodología del Design Thinking</li>
+                        <li>- Crear y modificar proyectos por grupo de trabajo</li>
+                        <li>- Crear y modificar fases de Design Thinking</li>
+                        <li>- Interactuar con grupo de trabajo online</li>
+                        <li>- Interactuar con clientes y usuarios objetivo del proyecto online</li>
+                        <li>- Documentar y modificar actividades de cada fase</li>
+                        <li>- Generar estadísticas de proyectos, actividades e integrantes del equipo de trabajo</li>
+                        <li>- Documentar feedback por cada proyecto</li> 
+                    </ul>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="El proceso realizado" id="procesos">
+    <section class="proceso" id="proceso">
         <div class="heading">
-            <h2>El proceso realizado</h2>
+            
+            <div class="w53">
+                <img src="Images/icons8_workflow.svg" class="imgLeanUxProcess">
+                <h2>El proceso realizado</h2>
+            </div>
             <div class="content">
                 <div class="contentBx w50">
                     <h3>Investigar</h3>
-                    <p>- Análisis de la competencia
-                        - Evaluación Heurística de la competencia
-                        - Desk Research
-                        - Documentación de referencia
-                        - Encuestas digitales con usuarios objetivos
-                        - Entrevistas online con usuarios objetivos
-                        - Foros de discusión online en redes sociales con usuarios objetivos
-                        - Diagrama de Afinidad
-                        - Poster Research</p>
-
+                    <ul>
+                        <li>Análisis de la competencia</li>
+                        <li>Evaluación Heurística de la competencia</li>
+                        <li>Desk Research</li>
+                        <li>Documentación de referencia</li>
+                        <li>Encuestas digitales con usuarios objetivos</li>
+                        <li>Entrevistas online con usuarios objetivos</li>
+                        <li>Foros de discusión online en redes sociales con usuarios objetivos</li>
+                        <li>Diagrama de Afinidad</li>
+                        <li>Poster Research</li>
+                    </ul>
+                    <div class="container">
+                        <div class="gallery">
+                            <div class="gallery-item">
+                                <a href="Images/EvaluacionHeur.png" data-lightbox="models" data-title="Caption 1">
+                                    <img class="imgProceso" src="Images/EvaluacionHeur.png">
+                                </a>
+                                <h2 class="gallery-title">Evaluación Heurística</h2>
+                            </div>
+                            <div class="gallery-item">
+                                <a href="Images/PosterResearch.jpg" data-lightbox="models" data-title="Caption 2">
+                                    <img class="imgProceso" src="Images/PosterResearch.jpg">
+                                </a>
+                                <h2 class="gallery-title">Poster Research</h2>
+                            </div>
+                            <div class="gallery-item">
+                                <a href="Images/affinityDiagram.png" data-lightbox="models" data-title="Caption 3">
+                                    <img class="imgProceso" src="Images/affinityDiagram.png">
+                                </a>
+                                <h2 class="gallery-title">Affinity Diagram</h2>
+                            </div>
+                        </div>
+                    </div>
                     <h3>Empatizar</h3>
-                    <p>- Proto-Persona
-                        - Mapa de Empatía
-                        - Proto-Journey</p>
+                    <ul>
+                        <li>Proto-Persona</li>
+                        <li>Mapa de Empatía</li>
+                        <li>Proto-Journey</li>
+                    </ul>
 
+                    <div class="container">
+                        <div class="gallery">
+                            <div class="gallery-item">
+                                <a href="Images/protoPersona1.png" data-lightbox="models" data-title="Caption 1">
+                                    <img class="imgProceso" src="Images/protoPersona1.png">
+                                </a>
+                                <h2 class="gallery-title">Proto-Persona 1</h2>
+                            </div>
+                            <div class="gallery-item">
+                                <a href="Images/protoPersona2.png" data-lightbox="models" data-title="Caption 2">
+                                    <img class="imgProceso" src="Images/protoPersona2.png">
+                                </a>
+                                <h2 class="gallery-title">Proto-Persona 2</h2>
+                            </div>
+                            <div class="gallery-item">
+                                <a href="Images/empatia.png" data-lightbox="models" data-title="Caption 3">
+                                    <img class="imgProceso" src="Images/empatia.png">
+                                </a>
+                                <h2 class="gallery-title">Mapa de Empatía</h2>
+                            </div>
+                            <div class="gallery-item">
+                                <a href="Images/proto-journey.png" data-lightbox="models" data-title="Caption 3">
+                                    <img class="imgProceso" src="Images/proto-journey-front.png">
+                                </a>
+                                <h2 class="gallery-title">Proto-Journey</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                   
                     <h3>Definir</h3>
-                    <p>- Value Proposition Canvas
-                        - Historias de Usuario
-                        - Método MoSCoW</p>
+                    <ul>
+                        <li>Value Proposition Canvas</li>
+                        <li>Historias de Usuario</li>
+                        <li>Método MoSCoW</li>
+                    </ul>
 
+                    <div class="container">
+                        <div class="gallery">
+                            <div class="gallery-item">
+                                <a href="Images/vpc.png" data-lightbox="models" data-title="Value Proposition Canvas">
+                                    <img class="imgProceso" src="Images/vpc.png">
+                                </a>
+                                <h2 class="gallery-title">Value Proposition Canvas</h2>
+                            </div>
+                            <div class="gallery-item">
+                                <a href="Images/UserStories.png" data-lightbox="models" data-title="User Stories">
+                                    <img class="imgProceso" src="Images/UserStories-front.png">
+                                </a>
+                                <h2 class="gallery-title">User Stories</h2>
+                            </div>
+                            <div class="gallery-item">
+                                <a href="Images/moscow.png" data-lightbox="models" data-title="Método MoSCoW">
+                                    <img class="imgProceso" src="Images/moscow.png">
+                                </a>
+                                <h2 class="gallery-title">Método MoSCoW</h2>
+                            </div>
+                        </div>
+                    </div>
                     <h3>Idear</h3>
-                    <p>- SiteMap                            
-                    - User Flow Mapping</p>
+                    <ul>
+                        <li>SiteMap</li>
+                        <li>User Flow Mapping</li>
+                    </ul>
 
+                    <div class="container">
+                        <div class="gallery">
+                            <div class="gallery-item">
+                                <a href="Images/sitemap.png" data-lightbox="models" data-title="Site Map">
+                                    <img class="imgProceso" src="Images/sitemap-front.png">
+                                </a>
+                                <h2 class="gallery-title">Site Map</h2>
+                            </div>
+                            <div class="gallery-item">
+                                <a href="Images/userflow.png" data-lightbox="models" data-title="User Flow">
+                                    <img class="imgProceso" src="Images/userflow-front.png">
+                                </a>
+                                <h2 class="gallery-title">User Flow</h2>
+                            </div>
+                        </div>
+                    </div>
                     <h3>Prototipar</h3>
-                    <p>- Crazy 8’s
-                        - Sketching
-                        - Wireframing de bajo nivel
-                        - Wireframing de alto nivel
-                        - Diseño de sistema ui
-                        - Prototipos</p>
+                    <ul>
+                        <li>Crazy 8’s</li>
+                        <li>Sketching</li>
+                        <li>Wireframing de bajo nivel</li>
+                        <li>Wireframing de alto nivel</li>
+                        <li>Prototipos</li>
+                    </ul>
+
+
+
+                    <div class="carousel">
+                        <div class="carousel-inner">
+                            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                            <div class="carousel-item">
+                                <img src="Images/crazy8.png">
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                            <div class="carousel-item">
+                                <img src="Images/sketching.png">
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                            <div class="carousel-item">
+                                <img src="Images/proyectoFarm1.png">
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+                            <div class="carousel-item">
+                                <img src="Images/proyectoFarm2.png">
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel-5" name="carousel" aria-hidden="true" hidden="">
+                            <div class="carousel-item">
+                                <img src="Images/proyectoFarm3.png">
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel-6" name="carousel" aria-hidden="true" hidden="">
+                            <div class="carousel-item">
+                                <img src="Images/proyectoFarm4.png">
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel-7" name="carousel" aria-hidden="true" hidden="">
+                            <div class="carousel-item">
+                                <img src="Images/proyectoFarm5.png">
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel-8" name="carousel" aria-hidden="true" hidden="">
+                            <div class="carousel-item">
+                                <img src="Images/proyectoFarm6.png">
+                            </div>
+
+
+
+
+                            <label class="carousel-control prev control-1" for="carousel-8">‹</label>
+                            <label class="carousel-control next control-1" for="carousel-2">›</label>
+                            <label class="carousel-control prev control-2" for="carousel-1">‹</label>
+                            <label class="carousel-control next control-2" for="carousel-3">›</label>
+                            <label class="carousel-control prev control-3" for="carousel-2">‹</label>
+                            <label class="carousel-control next control-3" for="carousel-4">›</label> 
+                            <label class="carousel-control prev control-4" for="carousel-3">‹</label>
+                            <label class="carousel-control next control-4" for="carousel-5">›</label>
+                            <label class="carousel-control prev control-5" for="carousel-4">‹</label>
+                            <label class="carousel-control next control-5" for="carousel-6">›</label>
+                            <label class="carousel-control prev control-6" for="carousel-5">‹</label>
+                            <label class="carousel-control next control-6" for="carousel-7">›</label>
+                            <label class="carousel-control prev control-7" for="carousel-6">‹</label>
+                            <label class="carousel-control next control-7" for="carousel-8">›</label>
+                            <label class="carousel-control prev control-8" for="carousel-7">‹</label>
+                            <label class="carousel-control next control-8" for="carousel-1">›</label>
+
+
+
+                            <ol class="carousel-indicators">
+                                <li>
+                                    <label for="carousel-1" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel-2" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel-3" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel-4" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel-5" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel-6" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel-7" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel-8" class="carousel-bullet">•</label>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+
+
+                    <br>
+                    <br>
+                    <div class="section full-height over-hide px-4 px-sm-0">
+                        <div class="container">
+                            <div class="row full-height justify-content-center">
+                                <div class="col-lg-10 col-xl-8 align-self-center padding-tb">
+                                    <div class="section mx-auto text-center slider-height-padding">
+                                          <input class="checkbox frst" type="radio" name="slider" id="slide-1" checked/>
+                                          <label for="slide-1"></label>
+                                          <input class="checkbox scnd" type="radio" name="slider" id="slide-2"/>
+                                          <label for="slide-2"></label>
+                                          <input class="checkbox thrd" type="radio" name="slider" id="slide-3"/>
+                                          <label for="slide-3"></label>
+                                          <input class="checkbox foth" type="radio" name="slider" id="slide-4"/>
+                                          <label for="slide-4"></label>
+                                          <input class="checkbox five" type="radio" name="slider" id="slide-5"/>
+                                          <label for="slide-5"></label>
+                                          <input class="checkbox six" type="radio" name="slider" id="slide-6"/>
+                                          <label for="slide-6"></label>
+                                          <input class="checkbox seven" type="radio" name="slider" id="slide-7"/>
+                                          <label for="slide-7"></label>
+                                          <input class="checkbox eight" type="radio" name="slider" id="slide-8"/>
+                                          <label for="slide-8"></label>
+
+                                        <ul class="slide2">
+                                            <li>
+                                                <span>SKETCHING 1</span>
+                                            </li>
+                                            <li>
+                                                <span>SKETCHING 2</span>
+                                            </li>
+                                            <li>
+                                                <span>SKETCHING 3</span>
+                                            </li>
+                                            <li>
+                                                <span>SKETCHING 4</span>
+                                            </li>
+                                            <li>
+                                                <span>SKETCHING 5</span>
+                                            </li>
+                                            <li>
+                                                <span>SKETCHING 6</span>
+                                            </li>
+                                            <li>
+                                                <span>SKETCHING 7</span>
+                                            </li>
+                                            <li>
+                                                <span>SKETCHING 8</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+
+
+
+
 
                     <h3>Testear</h3>
-                    <p>- User Testing (Thinking Aloud)
-                        - Test de Guerrilla
-                        - A/B Testing
-                        - Evaluación Heurística con expertos
-                        - Beta Testing</p>
+                    <ul>
+                        <li>User Testing (Thinking Aloud)</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="Resultados y concluciones" id="feedback">
+    <section class="feedback" id="feedback">
         <div class="heading">
             <h2>El feedback</h2>
             <div class="content">
@@ -197,59 +483,11 @@
             </div>
         </div>
     </section>
-
-    <section class="contact" id="contact">
-        <div class="heading white">
-            <h2>Contacto</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="content">
-            <div class="contactInfo">
-                <h3>Contactame</h3>
-                <div class="contactInfoBx">
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-map-marker"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Dirección</h3>
-                            <p>Rosario de santa fe 422 <br> 1º B <br> Barrio Centro <br> Córdoba, Argentina</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-phone"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Teléfono</h3>
-                            <p>351-7567578</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-envelope-o"></i>
-                        </div>
-                        <div class="text">
-                            <h3>Email</h3>
-                            <p>bottiglieri@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="formBx">
-                <form action="">
-                    <h3>Envíame un Mensaje</h3>
-                    <input type="text" placeholder="Nombre completo">
-                    <input type="email" placeholder="Email">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
-        </div>
-    </section>
     <div class="copyright">
         <p>copyright &#169 2020 - CB Design - Todos los derechos reservados</p>
     </div>
+
+    <script src="lightbox-plus-jquery.js"></script>
     <script>
         window.addEventListener('scroll',function(){
             var header = document.querySelector('header');
