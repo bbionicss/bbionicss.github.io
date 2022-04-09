@@ -144,11 +144,11 @@ header.sticky ul li a{
 }
 
 .about{
-    background: #F5F3FD;
+    background: #ffffff;
 }
 .heading{
     width: 100%;
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
     color: #111;
 }
@@ -161,7 +161,7 @@ header.sticky ul li a{
     justify-content: space-between;
 }
 .contentBx{
-    padding-right: 30px;
+    padding: 30px;
 }
 .contentBx h3{
     font-size: 24px;
@@ -170,12 +170,46 @@ header.sticky ul li a{
 .w50{
     min-width: 50%;    
 }
-.imgUser{
-    max-width: 50%;
-    margin-left: 100px;
+
+.imgUser1{
+    max-width: 99%;
+    margin-left: 5px;
+
+    background:#000; /*black if no img*/
+    border:solid #fff;
+    border-width:6px 6px 6px 6px;
+    box-shadow:1px 1px 5px #333; /* Standard blur at 5px. Increase for more depth */
+}
+.imgUser2{
+    max-width: 100%;
+    margin-left: 5px;
+
+    background:#000; /*black if no img*/
+    border:solid #fff;
+    border-width:6px 6px 6px 6px;
+    box-shadow:1px 1px 5px #333; /* Standard blur at 5px. Increase for more depth */
+}
+.imgUser3{
+    max-width: 100%;
+    margin-left: 5px;
+
+    background:#000; /*black if no img*/
+    border:solid #fff;
+    border-width:6px 6px 6px 6px;
+    box-shadow:1px 1px 5px #333; /* Standard blur at 5px. Increase for more depth */
+}
+.imgUser4{
+    max-width: 100%;
+    margin-left: 5px;
+
+    background:#000; /*black if no img*/
+    border:solid #fff;
+    border-width:6px 6px 6px 6px;
+    box-shadow:1px 1px 5px #333; /* Standard blur at 5px. Increase for more depth */
 }
 .services{
 background: #333;
+height: auto;
 }
 .heading.white{
     color: #F5F3FD;
@@ -298,14 +332,27 @@ transition: 0.5s;
     flex-wrap: wrap;
 }
 .work .content .workBx{
-    width: 50%;
+    width: 30%;
     padding: 20px;
 }
 .work .content .workBx img{
+    transition:all .4s ease-in-out;
+-webkit-transition:all .4s ease-in-out;
+-moz-transition:all .4s ease-in-out;
+-ms-transition:all .4s ease-in-out;
+-o-transition:all .4s ease-in-out;
     max-width: 100%;
     /* filter: drop-shadow(30px 10px 4px #4444dd); */
     box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
 }
+.work .content .workBx img:hover{
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+}
+
 .testimonial{
     background: #f7f7f7;
 }
@@ -414,10 +461,52 @@ transition: 0.5s;
     margin-bottom: 0;
 }
 .copyright{
-    background: #000;
+    background: #222;
     color: #F5F3FD;
     text-align: center;
     padding: 10px;
+}
+
+/*TinkersPro*/
+.imgDT{
+    max-width: 70%;
+    margin-left: 50px;
+}
+.intro{
+    background: #F5F3FD;
+}
+.problema{
+    background: #dadada;
+    margin-left: 0%;
+}
+.imgDTProcess{
+    max-width: 100%;
+}
+.publico{
+    background: #F5F3FD;
+}
+.imgDTUsers{
+    max-width: 70%;
+    margin-left: 50px;
+}
+.roles{
+    background: #dadada;
+}
+.imgDTRol{
+    max-width: 70%;
+}
+.limites{
+    background: #F5F3FD;
+}
+.proceso{
+    background: #dadada;
+}
+.imgDTUserProcess{
+    max-width: 50%;
+    margin-left: 50px;
+}
+.feedback{
+    background: #F5F3FD;
 }
 
 /*Responsive*/
