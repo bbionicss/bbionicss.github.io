@@ -1,2 +1,2 @@
-# bbionicss.github.io Carlos Bottiglieri - UX-UI Design Portfolio
+# bbionicss.github.io Carlos Bottiglieri
 Mi portafolio personal de UX-UI Design
